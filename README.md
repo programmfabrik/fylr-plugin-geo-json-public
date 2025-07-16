@@ -47,23 +47,47 @@ This plugin operates in two modes depending on the capabilities of your Fylr ins
 
 ## Getting Started
 
-Once installed, Fylr will automatically use this plugin to render fields of type `geographic`.
+Once installed, Fylr will automatically use this plugin to render fields of type `geographic`.  
+Additionally, it adds functionality for filtering and searching records using geo-data.
 
 ### Detail View
 
-- Fields of type GeoJSON will display all included geographic components (called "features").
-- Features will be shown as a list for easy navigation and inspection.
+- Fields of type `GeoJSON` will display all included geographic components (known as "features").
+- Features are shown as a list for easy navigation and inspection.
+- The detail view can display a map with all available features in the currently opened record. This includes:
+  - Assets with geo metadata
+  - Geo-JSON fields
+  - Custom data types that support the geo standard
 
 ### Editor View
 
-- Users will be able to create and edit features interactively using the built-in map editor.
+- Users can create and edit features interactively using the built-in map editor.
+- The GeoJSON input field supports several text formats, which are automatically parsed:
+  - Latitude and longitude coordinates, e.g., `lat:23.423, lon:32.423`
+  - Direct Google Maps links:  
+    - If the link refers to a "place", it will be used as the name of the point.  
+    - If not, the center of the linked map will be used as the point location.
+  - Raw GeoJSON data can also be pasted directly into the text field. The field will parse it and prompt the user to import the data.
+- Additionally, through the field’s schema options in the data model, you can:
+  - Restrict which types of features are supported in the map
+  - Limit the field to accept only one feature, if desired
+
+### Expert Search
+
+This plugin enables geographic record searches via the `geo-json` column in Fylr’s expert search. Available options include:
+
+- Searching for all records within a custom area drawn on the map
+- Searching for records inside a circle defined by the user on the map
+- Searching using a defined point and radius
+- Searching within real-world areas using geo-coding  
+  _Example: Find all records located within the area defined by "Berlin"._
 
 ### Additional Functionality
 
 - A new button, **"Show Map"**, will appear in the main search interface.
 - Clicking this button opens the **Map Search Manager**, allowing users to filter the current search using an interactive map.
 
----
+  ---
 
 ## Map Editor
 
@@ -85,9 +109,9 @@ Additionally, users can:
 
 ---
 
-## Search Manager
+## Map Search Manager
 
-The Search Manager, also known as the Map Companion, introduces a new way to filter and explore search results using geographic data.
+The Map Search Manager, introduces a new way to filter and explore search results using geographic data.
 
 - This functionality can be activated via the **"Show Map"** button located next to the **"Filter"** button in the main search interface.
 - When activated, an interactive map appears alongside the search results, displaying all objects that have `geo-standard` configured.
