@@ -24,6 +24,27 @@ We welcome all feedback, suggestions, and issue reports as we continue improving
      
 ---
 
+## Licensed vs Unlicensed Version
+
+This plugin operates in two modes depending on the capabilities of your Fylr instance. If your instance includes a valid license with the `geo_support` feature enabled, all plugin functionalities will be available. Otherwise, the plugin will run in basic mode with limited features.
+
+### Features Available Without `geo_support`
+
+- **Geo-JSON Columns**: You can use geo-json columns to add geographic points on the map. An interactive map will be displayed allowing you to place a single point. However, lines and shapes cannot be added interactively through the map editor in this mode.
+- **Data Display**: While you can store detailed geo-json data in the column, the interactive map will only support point-based editing.
+- **Detail Map**: The detail map will still be visible and will render all available geo-json data.
+- **Map Search Manager**: This feature will be disabled, as it requires geo-data search capabilities provided only by instances with `geo_support`.
+
+### Additional Features with `geo_support` Enabled
+
+- **Map Editor Enhancements**: The editor will support both individual features and feature collections.
+- **Supported Geometry Types**: Points, lines, and polygons can be added and edited interactively.
+- **Geocoder Tool**: You will be able to search for real-world locations and generate geographic data using the integrated geocoder.
+- **Expert Search**: Enables advanced searching using geo-data criteria.
+- **Search Manager Integration**: The geo-based search manager will be available in the main search interface.
+
+---
+
 ## Getting Started
 
 Once installed, Fylr will automatically use this plugin to render fields of type `geographic`.
