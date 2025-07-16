@@ -1,0 +1,52 @@
+key,de-DE,R,en-US,R,da-DK,R,fi-FI,R,sv-SE,R,fr-FR,R,it-IT,R,es-ES,R,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+map.editor.tool.add_point|icon,fa-plus,FALSE,fa-plus,FALSE,fa-plus,FALSE,fa-plus,FALSE,fa-plus,FALSE,fa-plus,FALSE,fa-plus,FALSE,fa-plus,FALSE,fa-plus,FALSE,fa-plus,FALSE,fa-plus,FALSE
+map.editor.tool.add_point|text,Add Point,FALSE,Add Point,FALSE,Add Point,FALSE,Lisää piste,FALSE,Lägg till punkt,TRUE,Ajouter un point,FALSE,Add Point,FALSE,Add Point,FALSE,Add Point,FALSE,Add Point,FALSE,Add Point,FALSE
+map.editor.tool.add_point|tooltip,Add Point,FALSE,Add Point,FALSE,Add Point,FALSE,Lisää piste,FALSE,Lägg till punkt,TRUE,Ajouter un point,FALSE,Add Point,FALSE,Add Point,FALSE,,FALSE,,FALSE,,FALSE
+map.editor.tool.add_line|icon,fa-plus,FALSE,fa-plus,FALSE,fa-plus,FALSE,fa-plus,FALSE,fa-plus,FALSE,fa-plus,FALSE,fa-plus,FALSE,fa-plus,FALSE,fa-plus,FALSE,fa-plus,FALSE,fa-plus,FALSE
+map.editor.tool.add_line|text,Add Line,FALSE,Add Line,FALSE,Add Line,FALSE,Lisää viiva,FALSE,Lägg till linje,TRUE,Ajouter une ligne,FALSE,Add Line,FALSE,Add Line,FALSE,Add Line,FALSE,Add Line,FALSE,Add Line,FALSE
+map.editor.tool.add_line|tooltip,Add Line,FALSE,Add Line,FALSE,Add Line,FALSE,Lisää viiva,FALSE,Lägg till linje,TRUE,Ajouter une ligne,FALSE,Add Line,FALSE,Add Line,FALSE,,FALSE,,FALSE,,FALSE
+map.editor.tool.add_polygon|icon,fa-plus,FALSE,fa-plus,FALSE,fa-plus,FALSE,fa-plus,FALSE,fa-plus,FALSE,fa-plus,FALSE,fa-plus,FALSE,fa-plus,FALSE,fa-plus,FALSE,fa-plus,FALSE,fa-plus,FALSE
+map.editor.tool.add_polygon|text,Add Area,FALSE,Add Area,FALSE,Add Area,FALSE,Lisää alue,FALSE,Lägg till område,TRUE,Ajouter une zone,FALSE,Add Area,FALSE,Add Area,FALSE,Add Area,FALSE,Add Area,FALSE,Add Area,FALSE
+map.editor.tool.add_polygon|tooltip,Draw Area,FALSE,Draw Area,FALSE,Draw Area,FALSE,Piirrä alue,FALSE,Rita område,TRUE,Zone de dessin,FALSE,Draw Area,FALSE,Draw Area,FALSE,,FALSE,,FALSE,,FALSE
+map.editor.tool.geocoder|text,Geocoder,FALSE,Geocoder,FALSE,,FALSE,,FALSE,,FALSE,Geocoder,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE
+map.editor.title.editor|text,Map Editor,FALSE,Map Editor,FALSE,Map Editor,FALSE,Karttaeditori,FALSE,Karteditor,TRUE,Editeur de carte,FALSE,Map Editor,FALSE,Map Editor,FALSE,Map Editor,FALSE,Map Editor,FALSE,Map Editor,FALSE
+map.detail.plugin.button|icon,fa-map-o,FALSE,fa-map-o,FALSE,fa-map-o,FALSE,fa-map-o,FALSE,fa-map-o,FALSE,fa-map-o,FALSE,fa-map-o,FALSE,fa-map-o,FALSE,,FALSE,,FALSE,,FALSE
+server.config.parameter.system.mapbox_token.value.label,Token,FALSE,Token,FALSE,Token,FALSE,Token,FALSE,Token,FALSE,Token,FALSE,Token,FALSE,Token,FALSE,Token,FALSE,Mapbox Token,FALSE,,FALSE
+server.config.name.system.map_type,,TRUE,Map Type,FALSE,,FALSE,,FALSE,,FALSE,Type de carte,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE
+server.config.parameter.system.map_type.select.label,,TRUE,Map,FALSE,,FALSE,,FALSE,,FALSE,Carte,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE
+server.config.option.system.map_type.select.ol,,TRUE,Open Layers,FALSE,,FALSE,,FALSE,,FALSE,Ouvrir les calques de la carte,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE
+server.config.option.system.map_type.select.mapbox,,TRUE,Mapbox,FALSE,,FALSE,,FALSE,,FALSE,Mapbox,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE
+server.config.name.system.mapbox_token,Token,FALSE,Token,FALSE,Token,FALSE,Token,FALSE,Token,FALSE,Token,FALSE,Mapbox Token,FALSE,Mapbox Token,FALSE,,FALSE,,FALSE,,FALSE
+server.config.name.system.custom_map_style,Custom Map Style,FALSE,Custom Map Style,FALSE,Custom Map Style,FALSE,Mukautettu karttatyyli,FALSE,Anpassad kartstil,TRUE,Style de la carte personnalisé,FALSE,Custom Map Style,FALSE,Custom Map Style,,,,,,,
+server.config.parameter.system.custom_map_style.value.label,Url to style file,FALSE,Url to style file,FALSE,Url to style file,FALSE,Tyylitiedoston URL-osoite,FALSE,URL till stilfil,TRUE,URL vers le fichier pour le style,FALSE,Url to style file,FALSE,Url to style file,,,,,,,
+map.editor.list.edit.button.add|icon,fa-plus,FALSE,fa-plus,FALSE,fa-plus,FALSE,fa-plus,FALSE,fa-plus,FALSE,fa-plus,FALSE,fa-plus,FALSE,fa-plus,,,,,,,
+map.editor.list.button.remove|icon,fa-minus,FALSE,fa-minus,FALSE,fa-minus,FALSE,fa-minus,FALSE,fa-minus,FALSE,fa-minus,FALSE,fa-minus,FALSE,fa-minus,,,,,,,
+map.editor.open.button,Open Map Editor,FALSE,Open Map Editor,FALSE,Open Map Editor,FALSE,Avaa karttaeditori,FALSE,Öppna karteditor,TRUE,Ouvrir l'éditeur de la Carte,FALSE,Open Map Editor,FALSE,Open Map Editor,,Open Map Editor,,,,,
+server.config.name.system.custom_map_json,Custom Map JSON,TRUE,Custom Map JSON,TRUE,Custom Map JSON,TRUE,Mukautettu kartta JSON,FALSE,Anpassad karta JSON,TRUE,JSON personnalisé de la carte,TRUE,Custom Map JSON,FALSE,,FALSE,,,,,,
+server.config.parameter.system.custom_map_json.value.label,JSON for custom map,TRUE,JSON for custom map,TRUE,JSON for custom map,TRUE,JSON mukautettua karttaa varten,FALSE,JSON för anpassad karta,TRUE,JSON pour la personnalisation de la carte,TRUE,JSON for custom map,TRUE,,FALSE,,,,,,
+map.editor.list.title,Feature List,TRUE,Feature List,TRUE,Feature List,TRUE,Paikkatiedot,FALSE,Funktionslista,TRUE,Liste de fonctionnalités,TRUE,Feature List,TRUE,,,,,,,,
+map.editor.detail.title,Detail,TRUE,Detail,TRUE,Detail,TRUE,Tiedot,FALSE,Detaljer,TRUE,Détail,TRUE,Detail,TRUE,,,,,,,,
+map.editor.detail.no_feature_selected,No Feature Selected,TRUE,No Feature Selected,TRUE,No Feature Selected,TRUE,Valitse paikkatieto,FALSE,Ingen funktion har valts,TRUE,Aucune fonctionnalité sélectionnée,TRUE,No Feature Selected,TRUE,,,,,,,,
+tool.map.capture.bound,,TRUE,Use Map View as Search Filter,FALSE,,FALSE,,FALSE,,FALSE,Utiliser la vue de la Carte comme filtre de recherche,FALSE,,FALSE,,,,,,,,
+toolbox.class.map,,TRUE,Map,FALSE,,FALSE,,FALSE,,FALSE,Carte,FALSE,,FALSE,,,,,,,,
+search.main.map.button|text,,TRUE,Show Map,FALSE,,FALSE,,FALSE,,FALSE,Afficher la carte,FALSE,,FALSE,,,,,,,,
+search.main.map.button|icon,,TRUE,fa-map-o,FALSE,,FALSE,,FALSE,,FALSE,fa-map-o,FALSE,,FALSE,,,,,,,,
+search.main.map.button|tooltip,,TRUE,Show/Hide the map sideview,FALSE,,FALSE,,FALSE,,FALSE,Afficher / masquer la vue latérale de la carte,FALSE,,FALSE,,,,,,,,
+server.config.parameter.system.custom_map_styles.styles.name.label,,FALSE,Name,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,,,,,,,
+server.config.parameter.system.custom_map_styles.styles.value.label,,FALSE,Definition,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,,,,,,,
+server.config.parameter.system.custom_map_styles.styles.label,,FALSE,Custom Map Definitions,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,,,,,,,
+server.config.name.system.custom_map_styles,,FALSE,Custom Maps,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,,,,,,,
+search.main.map.settings.title,,FALSE,Map Settings,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,,,,,,,
+search.main.map.settings.marker_format,,FALSE,Marker Format,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,,,,,,,
+search.main.map.settings.marker_format.standard,,FALSE,Standard,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,,,,,,,
+search.main.map.settings.marker_format.icon,,FALSE,Icon,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,,,,,,,
+search.main.map.settings.marker_size,,FALSE,Marker Size,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,,,,,,,
+search.main.map.settings.marker_size.sm,,FALSE,Small,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,,,,,,,
+search.main.map.settings.marker_size.md,,FALSE,Medium,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,,,,,,,
+search.main.map.settings.marker_size.lg,,FALSE,Large,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,,,,,,,
+geoJsonColumn.search.info,,FALSE,%(count)s areas ,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,,,,,,,
+geoJsonColumn.search.info.single,,FALSE,Area,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,,,,,,,
+geo.column.search.button|text,,FALSE,Open Map,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,,,,,,,
+geo.column.search.button|icon,,FALSE,fa-map-o,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,,,,,,,
+geo.column.search.button|tooltip,,FALSE,Open the map editor to define a geographic area to use as a search filter,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,,,,,,,
+,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,,,,,,,

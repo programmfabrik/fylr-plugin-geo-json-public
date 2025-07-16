@@ -1,0 +1,44 @@
+plugin:
+  name: geo-json
+  version: "1"
+  l10n: l10n/geo-json.csv
+  displayname:
+    de-DE: Geo JSON
+    en-US: Geo JSON
+  webfrontend:
+    url: geo-json.js
+    css: geo-json.css
+    html: geo-json.html
+
+base_url_prefix: "webfrontend"
+
+base_config:
+  - name: map_type
+    parameters:
+      select:
+        type: select
+        options:
+          - ol
+        position: 0
+
+  - name: default_map_center
+    parameters:
+      value:
+        type: json
+        position: 2
+
+  - name: custom_map_styles
+    parameters:
+      styles:
+        type: table
+        position: 2
+        fields:
+          - name: name
+            type: text
+            position: 0
+          - name: default
+            type: bool
+            position: 1
+          - name: value
+            type: json
+            position: 2
