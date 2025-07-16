@@ -1,0 +1,52 @@
+name: Release
+
+on:
+  push:
+    tags:
+      - "v*.*.*"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      # 1. Checkout the repository
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      # 2. Extract tag version into VERSION env var
+      - name: Get version
+        id: get_version
+        run: |
+          VERSION=${GITHUB_REF#refs/tags/}
+          echo "VERSION=$VERSION" >> $GITHUB_ENV
+        shell: bash
+
+      # 3. Define ZIP name
+      - name: Set ZIP name
+        run: |
+          echo "ZIP_NAME=geo-json.zip" >> $GITHUB_ENV
+        shell: bash
+
+      # 4. Ensure zip is available (optional on ubuntu-latest)
+      - name: Install zip utility
+        run: sudo apt-get update && sudo apt-get install -y zip
+        shell: bash
+
+      # 5. Package the geo-json folder into a zip
+      - name: Create ZIP archive
+        run: |
+          zip -r "${{ env.ZIP_NAME }}" geo-json
+        shell: bash
+
+      # 6. Create a GitHub Release draft with the zip attached
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v1
+        with:
+          tag_name: ${{ github.ref_name }}
+          name: Release ${{ env.VERSION }}
+          draft: true
+          generate_release_notes: true
+          files: ${{ env.ZIP_NAME }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
