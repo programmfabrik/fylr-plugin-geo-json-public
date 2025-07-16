@@ -14,11 +14,14 @@ We welcome all feedback, suggestions, and issue reports as we continue improving
 
 ## Installation
 
-1. **Via Releases Page:**
-
-   - Download the latest version from the [Releases](./releases) page.
+1. **Via ZIP:**
+   - Download the latest version from [this link](https://github.com/programmfabrik/fylr-plugin-geo-json-public/releases/latest/download/geo-json.zip).
    - Use the Plugin Manager in Fylr to install the downloaded plugin package.
 
+2. **Via URL:**
+   - Use the following URL to install the plugin and **receive automatic updates** in your instance:  
+     [https://github.com/programmfabrik/fylr-plugin-geo-json-public/releases/latest/download/geo-json.zip](https://github.com/programmfabrik/fylr-plugin-geo-json-public/releases/latest/download/geo-json.zip)
+     
 ---
 
 ## Getting Started
