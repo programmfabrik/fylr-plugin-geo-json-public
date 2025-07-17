@@ -28,6 +28,10 @@ We welcome all feedback, suggestions, and issue reports as we continue improving
 
 This plugin operates in two modes depending on the capabilities of your Fylr instance. If your instance includes a valid license with the `geo_support` feature enabled, all plugin functionalities will be available. Otherwise, the plugin will run in basic mode with limited features.
 
+From the Fylr API’s perspective, the differences between having a license and not are:
+- **Read & write operations** for geo-json columns are available in basic mode.
+- **Search operations** for geo-json columns are available only in licensed mode.
+
 ### Features Available Without `geo_support`
 
 - **Geo-JSON Columns**: You can use geo-json columns to add geographic points on the map. An interactive map will be displayed allowing you to place a single point. However, lines and shapes cannot be added interactively through the map editor in this mode.
