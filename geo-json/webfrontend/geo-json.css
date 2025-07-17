@@ -321,5 +321,9 @@
     font-size: 10px;
   }
 }
+.ez5-map-config-container > .cui-pane {
+  width: 600px;
+  height: 300px;
+}
 
 /*# sourceMappingURL=geo-json.css.map */
