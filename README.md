@@ -126,7 +126,7 @@ This provides a powerful and intuitive way to navigate and narrow down search re
 ## Custom Map Configuration
 
 This plugin supports the [Mapbox Style Specification](https://docs.mapbox.com/style-spec/guides/), which allows you to fully define the visual appearance of maps.  
-Using this specification, you can add custom tiles or even vector data to create highly customized map styles.
+Using this specification, you can add custom tiles or even vector data to create highly customized map styles. Custom maps can be configured in the config panel of the geo-json plugin. Additionally, any custom map can be set as the **default map**, ensuring it is loaded by default in all map views.
 
 ---
 
@@ -144,13 +144,12 @@ You can configure a Mapbox style by providing the following JSON in the **Value*
 ```
 
 This will enable the use of the **satellite-streets-v12** map style across the application.  
-Additionally, any custom map can be set as the **default map**, ensuring it is loaded by default in all map views.
 
 ---
 
 ### Basic Example: Custom Style with OSM Tiles
 
-The following example shows how to define a custom style using free OpenStreetMap tiles and a set of points (Madrid and Barcelona):
+The following example shows how to define a custom style using free OpenStreetMap tiles:
 
 ```json
 {
