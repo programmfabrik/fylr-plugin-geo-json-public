@@ -123,6 +123,171 @@ The Map Search Manager, introduces a new way to filter and explore search result
 
 This provides a powerful and intuitive way to navigate and narrow down search results using spatial information.
 
+## Custom Map Configuration
+
+This plugin supports the [Mapbox Style Specification](https://docs.mapbox.com/style-spec/guides/), which allows you to fully define the visual appearance of maps.  
+Using this specification, you can add custom tiles or even vector data to create highly customized map styles.
+
+---
+
+### Example: Using Mapbox Tiles
+
+You can configure a Mapbox style by providing the following JSON in the **Value** field of the custom maps configuration:
+
+```json
+{
+  "properties": {
+    "accessToken": "<your_api_key>"
+  },
+  "url": "mapbox://styles/mapbox/satellite-streets-v12"
+}
+```
+
+This will enable the use of the **satellite-streets-v12** map style across the application.  
+Additionally, any custom map can be set as the **default map**, ensuring it is loaded by default in all map views.
+
+---
+
+### Basic Example: Custom Style with OSM Tiles
+
+The following example shows how to define a custom style using free OpenStreetMap tiles and a set of points (Madrid and Barcelona):
+
+```json
+{
+  "version": 8,
+  "name": "OSM Free Style",
+  "sources": {
+    "osm-tiles": {
+      "type": "raster",
+      "tiles": [
+        "https://tile.openstreetmap.org/{z}/{x}/{y}.png"
+      ],
+      "tileSize": 256,
+      "attribution": "© OpenStreetMap contributors"
+    }
+  },
+  "layers": [
+    {
+      "id": "osm-background",
+      "type": "raster",
+      "source": "osm-tiles",
+      "minzoom": 0,
+      "maxzoom": 19
+    }
+  ]
+}
+```
+
+---
+
+### Example with Custom Shapes
+
+Custom shapes allow you to draw additional layers on the map.  
+Unlike dynamic data, these shapes become part of the map style itself, making them useful for highlighting areas or regions.  
+
+In this example, we define polygon layers for **Comunidad de Madrid** and **Cataluña**:
+
+```json
+{
+  "version": 8,
+  "name": "OSM Free with Polygons",
+  "sources": {
+    "osm-tiles": {
+      "type": "raster",
+      "tiles": [
+        "https://tile.openstreetmap.org/{z}/{x}/{y}.png"
+      ],
+      "tileSize": 256,
+      "attribution": "© OpenStreetMap contributors"
+    },
+    "regions": {
+      "type": "geojson",
+      "data": {
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "type": "Feature",
+            "properties": { "name": "Comunidad de Madrid" },
+            "geometry": {
+              "type": "Polygon",
+              "coordinates": [
+                [
+                  [-4.6, 41.2],
+                  [-3.0, 41.2],
+                  [-3.0, 39.9],
+                  [-4.6, 39.9],
+                  [-4.6, 41.2]
+                ]
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": { "name": "Cataluña" },
+            "geometry": {
+              "type": "Polygon",
+              "coordinates": [
+                [
+                  [0.0, 42.9],
+                  [3.5, 42.9],
+                  [3.5, 40.9],
+                  [0.0, 40.9],
+                  [0.0, 42.9]
+                ]
+              ]
+            }
+          }
+        ]
+      }
+    }
+  },
+  "layers": [
+    {
+      "id": "osm-background",
+      "type": "raster",
+      "source": "osm-tiles",
+      "minzoom": 0,
+      "maxzoom": 19
+    },
+    {
+      "id": "regions-fill",
+      "type": "fill",
+      "source": "regions",
+      "paint": {
+        "fill-color": "#ff6600",
+        "fill-opacity": 0.4
+      }
+    },
+    {
+      "id": "regions-outline",
+      "type": "line",
+      "source": "regions",
+      "paint": {
+        "line-color": "#ff0000",
+        "line-width": 2
+      }
+    },
+    {
+      "id": "regions-labels",
+      "type": "symbol",
+      "source": "regions",
+      "layout": {
+        "text-field": "{name}",
+        "text-font": ["Open Sans Regular"],
+        "text-offset": [0, 1.2],
+        "text-anchor": "top"
+      },
+      "paint": {
+        "text-color": "#000000",
+        "text-halo-color": "#ffffff",
+        "text-halo-width": 1
+      }
+    }
+  ]
+}
+```
+
+
 ---
 
 Enjoy working with geographic data in Fylr!
