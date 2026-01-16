@@ -1,3 +1,5 @@
+IMPORTANT: This is a public repository for the Geo-JSON Plugin for Fylr. Use the instructions below to install the plugin in your Fylr instance. Dont use the release section of this repository as its outdated and is not used for distribution any more.
+
 # Geo-JSON Plugin for Fylr
 
 This plugin enables support for the GeoJSON format within the Fylr application. It provides views and editors for fields of type GeoJSON, along with additional utilities to work with geographic data.
@@ -15,12 +17,12 @@ We welcome all feedback, suggestions, and issue reports as we continue improving
 ## Installation
 
 1. **Via ZIP:**
-   - Download the latest version from [this link](https://github.com/programmfabrik/fylr-plugin-geo-json-public/releases/latest/download/geo-json.zip).
+   - Download the latest version from [this link](https://github.com/programmfabrik/fylr-plugin-geo-json/actions/runs/21071482127/artifacts/5155819031).
    - Use the Plugin Manager in Fylr to install the downloaded plugin package.
 
 2. **Via URL:**
    - Use the following URL to install the plugin and **receive automatic updates** in your instance:  
-     [https://github.com/programmfabrik/fylr-plugin-geo-json-public/releases/latest/download/geo-json.zip](https://github.com/programmfabrik/fylr-plugin-geo-json-public/releases/latest/download/geo-json.zip)
+     [https://github.com/programmfabrik/fylr-plugin-geo-json/actions/runs/21071482127/artifacts/5155819031](https://github.com/programmfabrik/fylr-plugin-geo-json/actions/runs/21071482127/artifacts/5155819031)
      
 ---
 
